@@ -1,35 +1,14 @@
 {
-  "name": "@digicroz/js-kit",
-  "version": "1.0.11",
-  "description": "Modern TypeScript utility library with tree-shaking support - Array, String, Number, Sleep, and Time utilities for JavaScript and TypeScript projects",
+  "name": "@digicroz/onesignal",
+  "version": "1.0.0",
+  "description": "OneSignal push notification helpers with typed responses",
   "keywords": [
+    "onesignal",
+    "push-notification",
     "typescript",
-    "javascript",
-    "utilities",
-    "utility-library",
-    "tree-shaking",
-    "esm",
-    "array-utils",
-    "string-utils",
-    "number-utils",
-    "slug",
-    "slug-utils",
-    "url-slug",
-    "sleep",
-    "time-utils",
-    "modern-js",
-    "typescript-library",
-    "js-kit",
-    "functional",
-    "chunking",
-    "capitalize",
-    "clamp",
-    "async-sleep",
-    "promise-utils",
-    "browser",
-    "universal",
-    "environment-detection",
-    "cross-platform"
+    "digicroz",
+    "notification",
+    "esm"
   ],
   "type": "module",
   "main": "./dist/index.js",
@@ -37,119 +16,14 @@
   "react-native": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "typings": "./dist/index.d.ts",
-  "typesVersions": {
-    "*": {
-      "string": [
-        "./dist/string/index.d.ts"
-      ],
-      "slug": [
-        "./dist/slug/index.d.ts"
-      ],
-      "array": [
-        "./dist/array/index.d.ts"
-      ],
-      "number": [
-        "./dist/number/index.d.ts"
-      ],
-      "sleep": [
-        "./dist/sleep/index.d.ts"
-      ],
-      "time": [
-        "./dist/time/index.d.ts"
-      ],
-      "utils": [
-        "./dist/utils/index.d.ts"
-      ],
-      "types": [
-        "./dist/types/index.d.ts"
-      ],
-      "enum": [
-        "./dist/enum/index.d.ts"
-      ],
-      "std-response": [
-        "./dist/std-response/index.d.ts"
-      ]
-    }
-  },
   "exports": {
     "./package.json": "./package.json",
     ".": {
       "types": "./dist/index.d.ts",
       "react-native": "./dist/index.js",
-      "browser": "./dist/index.js",
       "require": "./dist/index.cjs",
       "import": "./dist/index.js",
       "default": "./dist/index.js"
-    },
-    "./string": {
-      "types": "./dist/string/index.d.ts",
-      "react-native": "./dist/string/index.js",
-      "require": "./dist/string/index.cjs",
-      "import": "./dist/string/index.js",
-      "default": "./dist/string/index.js"
-    },
-    "./slug": {
-      "types": "./dist/slug/index.d.ts",
-      "react-native": "./dist/slug/index.js",
-      "require": "./dist/slug/index.cjs",
-      "import": "./dist/slug/index.js",
-      "default": "./dist/slug/index.js"
-    },
-    "./array": {
-      "types": "./dist/array/index.d.ts",
-      "react-native": "./dist/array/index.js",
-      "require": "./dist/array/index.cjs",
-      "import": "./dist/array/index.js",
-      "default": "./dist/array/index.js"
-    },
-    "./number": {
-      "types": "./dist/number/index.d.ts",
-      "react-native": "./dist/number/index.js",
-      "require": "./dist/number/index.cjs",
-      "import": "./dist/number/index.js",
-      "default": "./dist/number/index.js"
-    },
-    "./sleep": {
-      "types": "./dist/sleep/index.d.ts",
-      "react-native": "./dist/sleep/index.js",
-      "require": "./dist/sleep/index.cjs",
-      "import": "./dist/sleep/index.js",
-      "default": "./dist/sleep/index.js"
-    },
-    "./time": {
-      "types": "./dist/time/index.d.ts",
-      "react-native": "./dist/time/index.js",
-      "require": "./dist/time/index.cjs",
-      "import": "./dist/time/index.js",
-      "default": "./dist/time/index.js"
-    },
-    "./utils": {
-      "types": "./dist/utils/index.d.ts",
-      "react-native": "./dist/utils/index.js",
-      "require": "./dist/utils/index.cjs",
-      "import": "./dist/utils/index.js",
-      "default": "./dist/utils/index.js"
-    },
-    "./types": {
-      "types": "./dist/types/index.d.ts",
-      "react-native": "./dist/types/index.js",
-      "require": "./dist/types/index.cjs",
-      "import": "./dist/types/index.js",
-      "default": "./dist/types/index.js"
-    },
-    "./enum": {
-      "types": "./dist/enum/index.d.ts",
-      "react-native": "./dist/enum/index.js",
-      "require": "./dist/enum/index.cjs",
-      "import": "./dist/enum/index.js",
-      "default": "./dist/enum/index.js"
-    },
-    "./std-response": {
-      "types": "./dist/std-response/index.d.ts",
-      "react-native": "./dist/std-response/index.js",
-      "require": "./dist/std-response/index.cjs",
-      "import": "./dist/std-response/index.js",
-      "default": "./dist/std-response/index.js"
     }
   },
   "files": [
@@ -158,11 +32,11 @@
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/digicroz/js-kit.git"
+    "url": "https://github.com/digicroz/onesignal.git"
   },
-  "homepage": "https://github.com/digicroz/js-kit#readme",
+  "homepage": "https://github.com/digicroz/onesignal#readme",
   "bugs": {
-    "url": "https://github.com/digicroz/js-kit/issues"
+    "url": "https://github.com/digicroz/onesignal/issues"
   },
   "author": {
     "name": "Adarsh Hatkar",
@@ -188,7 +62,7 @@
     "release:patch": "npm version patch",
     "postversion": "git push && git push --tags && npm publish",
     "link": "npm run build && npm link",
-    "unlink": "npm unlink -g @digicroz/js-kit"
+    "unlink": "npm unlink -g @digicroz/onesignal"
   },
   "devDependencies": {
     "@types/node": "^24.3.0",
@@ -198,5 +72,7 @@
     "typescript": "^5.4.0",
     "vitest": "^4.0.16"
   },
-  "dependencies": {}
+  "dependencies": {
+    "axios": "^1.13.5"
+  }
 }
