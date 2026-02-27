@@ -62,9 +62,9 @@ export const pushNotificationToAllUsers = async ({
         return stdResponse.error("no_active_subscribers_found", msg);
       }
 
-      return stdResponse.error("ONESIGNAL_ERROR", msg || "Unknown OneSignal error");
+      return stdResponse.error("unknown_OneSignal_error", msg || "Contact Developer");
     }
 
-    return stdResponse.error("ONESIGNAL_ERROR", "Unknown OneSignal error");
+    return stdResponse.error("unknown_OneSignal_error", "Contact Developer");
   }
 };

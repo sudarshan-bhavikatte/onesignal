@@ -76,7 +76,7 @@ export const pushNotificationToSpecificUsers = async ({
         return stdResponse.error("no_active_subscribers_found", msg);
       }
 
-      return stdResponse.error("ONESIGNAL_ERROR", msg || "Unknown OneSignal error");
+      return stdResponse.error("unknown_OneSignal_error", msg || "Contact Developer");
     }
 
     if (errors?.invalid_aliases?.external_id) {
@@ -87,6 +87,6 @@ export const pushNotificationToSpecificUsers = async ({
       );
     }
 
-    return stdResponse.error("ONESIGNAL_ERROR", "Unknown OneSignal error");
+    return stdResponse.error("unknown_OneSignal_error", "Contact Developer");
   }
 };
